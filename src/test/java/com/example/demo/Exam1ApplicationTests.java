@@ -116,7 +116,7 @@ class Exam1ApplicationTests {
 		
 		List<BookVO> books = bookStoreRepository.selectBook();
 
-		System.out.println("== 서점 정보 ==");
+		System.out.println("== 모든 책의 제목 ==");
 
 		for (int i = 0; i < books.size(); i++) {
 
@@ -136,7 +136,7 @@ class Exam1ApplicationTests {
 
 		List<BookVO> books = bookStoreRepository.selectKoreaBook("코리아서점");
 
-		System.out.println("== 서점 정보 ==");
+		System.out.println("== 코리아서점에서 판매하는 책의 제목 ==");
 
 		for (int i = 0; i < books.size(); i++) {
 
